@@ -10,19 +10,26 @@
 
 const cards = document.querySelectorAll(".card");
 
-let card1, card2;
+let cardOne, cardTwo;
 
 function flipCard(e) { 
   let clickedCard = e.target; //collecting user's clicked card
-  if(clickedCard !== card1){
+  if(clickedCard !== cardOne){
     clickedCard.classList.add("flip");
-    if(!card1){
+    if(!cardOne){
       //return the cardOne value to clickCard
-      return card1 = clickedCard
+      return cardOne = clickedCard
     }
-      card2 = clickedCard;
-      console.log(card1, card2)
+      cardTwo = clickedCard;
+      
+      let cardOneImg = cardOne.querySelector('img'),
+      cardTwoImg = cardTwo.querySelector('img');
+      matchCards(cardOneImg, cardTwoImg);
   }
+}
+
+function matchCards(img1, img2){
+  console.log(img1, img2);
 }
 
 cards.forEach(card => { //this adds click event to all cards
