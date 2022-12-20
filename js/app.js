@@ -8,12 +8,21 @@
 
 // ]
 
-const cards = document.querySelectorAll(".cards");
+const cards = document.querySelectorAll(".card");
 
-function flipCard(e)
-console.log(e.target);
+let card1, card2;
+
+function flipCard(e) { 
+  let clickedCard = e.target; //collecting user's clicked card
+  clickedCard.classList.add("flip");
+if(!card1){
+  //return the cardOne value to clickCard
+  return card1 = clickedCard
+}
+  card2 = clickedCard;
+  console.log(card1, card2)
+}
 
 cards.forEach(card => { //this adds click event to all cards
   card.addEventListener("click", flipCard);
-
-})
+});
