@@ -22,14 +22,22 @@ function flipCard(e) {
     }
       cardTwo = clickedCard;
       
-      let cardOneImg = cardOne.querySelector('img'),
-      cardTwoImg = cardTwo.querySelector('img');
+      let cardOneImg = cardOne.querySelector('img').src,
+      cardTwoImg = cardTwo.querySelector('img').src;
       matchCards(cardOneImg, cardTwoImg);
   }
 }
 
 function matchCards(img1, img2){
-  console.log(img1, img2);
+  if(img1 === img2){ //if two cards img match
+return console.log('Card Matched');
+  }
+  //if two cards do not match
+  setTimeout(() => {
+    //adds jiggle class to both unmatched cards after 400ms
+    cardOne.classList.add("jiggle");
+    cardTwo.classList.add("jiggle");
+  }, 400);
 }
 
 cards.forEach(card => { //this adds click event to all cards
