@@ -38,6 +38,12 @@ return console.log('Card Matched');
     cardOne.classList.add("jiggle");
     cardTwo.classList.add("jiggle");
   }, 400);
+
+  setTimeout(() => {
+    //remove both jiggle and flip classes from both cards after 1.1 seconds
+    cardOne.classList.remove("jiggle", "flip");
+    cardTwo.classList.remove("jiggle", "flip");
+  }, 1100);
 }
 
 cards.forEach(card => { //this adds click event to all cards
