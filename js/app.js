@@ -59,11 +59,17 @@ function shuffleCard(){
   //generate 16-item array where each item is repeated twice
   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
   arr.sort(() => Math.random() > 0.5 ? 1 : -1); //sorting array items randomly
-  cards.forEach(card => {
+  
+  //remove flip class from all cards and passing random image to each card (had to rename img files to just intigers in order for template literal line 67 to work)
+  cards.forEach((card, index) => {
     card.classList.remove("flip");
+    let imgTag = card.querySelector("img");
+    imgTag.src = `images/img-${arr[index]}.jpeg`;
     card.addEventListener("click", flipCard);
   });
 }
+
+shuffleCard();
 
 cards.forEach(card => { //this adds click event to all card
   card.classList.add("flip");
