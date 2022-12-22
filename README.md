@@ -7,7 +7,7 @@
 
 ## Intro
 
-8 of the most popular Queens are in hiding and we need you to find them before time is up! Match them and spill the tea on some of their most tandilizing facts, gurl! 
+Hey squirrel-friend, 8 of the most popular Queens are in hiding and we need you to find them before time is up! Match them and spill the tea on some of their most tantalizing facts, gurl! 
 
 > The winner, gets a grand price of **$100,000!** 
 
