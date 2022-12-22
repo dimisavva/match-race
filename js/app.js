@@ -35,7 +35,9 @@ function matchCards(img1, img2){
     matchCard++; //increment matched value by 1
     //if matched value is 8 = user has matched all cards
     if(matchCard == 8){
-      shuffleCard();
+      setTimeout(() => {
+        return shuffleCard();
+      }, 900); //invoke shuffleCard function after 900ms
     }
     //if two cards are matched, then remove the click event listener from these cards so user cannot click these cards again
     cardOne.removeEventListener("click", flipCard);
