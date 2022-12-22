@@ -12,10 +12,23 @@ Hey squirrel-friend, 8 of the most popular Queens are in hiding and we need you 
 > The winner, gets a grand price of **$100,000!** 
 
 > Fire up your engines and let's bring back my gaarls!
+----
 
-[**CLICK HERE** to start the game!](https://dimisavva-match-race.netlify.app "RuPaul's Match Race")
+# [**CLICK HERE** to start the game!](https://dimisavva-match-race.netlify.app "RuPaul's Match Race")
 
-### Technologies used: HTML, CSS, JavaScipt
+## Technologies used: 
+---
+- HTML
+- CSS
+- JavaScipt
+- Shade ++
 
-### Next steps: Create a function to initiate a pop-up window with trivia question for each Drag Queen matched.
+## Credits
+---
+
+## Ice Box
+---
+- [ ] Trivia pop-up window when cards match
+- [ ] Score board
+- [ ] Original voice over 
 
