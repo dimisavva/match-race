@@ -1,12 +1,3 @@
-// const cardArray = [
-//   { name: 'Ru-Card'
-//     img: 'images/Ru.jpg'
-//   },
-//   { name: 'Ru-Card'
-//   img: 'images/Ru.jpg'
-// },
-
-// ]
 
 const cards = document.querySelectorAll(".card");
 
@@ -65,12 +56,16 @@ function matchCards(img1, img2){
 function shuffleCard(){
   matchCard = 0;
   cardOne, cardTwo = "";
+  //generate 16-item array where each item is repeated twice
+  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
+  arr.sort(() => Math.random() > 0.5 ? 1 : -1); //sorting array items randomly
   cards.forEach(card => {
     card.classList.remove("flip");
     card.addEventListener("click", flipCard);
   });
 }
 
-cards.forEach(card => { //this adds click event to all cards
+cards.forEach(card => { //this adds click event to all card
+  card.classList.add("flip");
   card.addEventListener("click", flipCard);
 });
