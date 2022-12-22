@@ -13,7 +13,7 @@
 
 > Fire up your engines and let's bring back my gaarls!
 
-[**CLICK here** to start the game!](https://dimisavva-match-race.netlify.app "RuPaul's Match Race")
+[**CLICK HERE** to start the game!](https://dimisavva-match-race.netlify.app "RuPaul's Match Race")
 
 ### Technologies used: HTML, CSS, JavaScipt
 
