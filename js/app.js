@@ -63,6 +63,10 @@ function matchCards(img1, img2){
 function shuffleCard(){
   matchCard = 0;
   cardOne, cardTwo = "";
+  cards.forEach(card => {
+    card.classList.remove("flip");
+    card.addEventListener("click", flipCard);
+  });
 }
 
 cards.forEach(card => { //this adds click event to all cards
