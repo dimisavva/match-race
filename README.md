@@ -13,9 +13,9 @@
 
 > Fire up your engines and let's bring back my gaarls!
 
-[**CLICK here** to start the game!](https://dimisavva-match-race.netlify.app "RuPaul's Match Race)
+[**CLICK here** to start the game!](https://dimisavva-match-race.netlify.app "RuPaul's Match Race")
 
-## Technologies used: HTML, CSS, JavaScipt
+### Technologies used: HTML, CSS, JavaScipt
 
-## Next steps: Create a function to initiate a pop-up window with trivia question for each Drag Queen matched.
+### Next steps: Create a function to initiate a pop-up window with trivia question for each Drag Queen matched.
 
