@@ -10,6 +10,7 @@
 
 const cards = document.querySelectorAll(".card");
 
+let matchCard = 0;
 let cardOne, cardTwo;
 let disableDeck = false;
 
@@ -31,6 +32,11 @@ function flipCard(e) {
 
 function matchCards(img1, img2){
   if(img1 === img2){ //if two cards img match
+    matchCard++; //increment matched value by 1
+    //if matched value is 8 = user has matched all cards
+    if(matchCard == 8){
+      shuffleCard();
+    }
     //if two cards are matched, then remove the click event listener from these cards so user cannot click these cards again
     cardOne.removeEventListener("click", flipCard);
     cardTwo.removeEventListener("click", flipCard);
@@ -52,6 +58,11 @@ function matchCards(img1, img2){
     cardOne = cardTwo = "";
     disableDeck = false;
   }, 1100);
+}
+
+function shuffleCard(){
+  matchCard = 0;
+  cardOne, cardTwo = "";
 }
 
 cards.forEach(card => { //this adds click event to all cards
