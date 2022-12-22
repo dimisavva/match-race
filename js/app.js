@@ -30,9 +30,12 @@ function flipCard(e) {
 
 function matchCards(img1, img2){
   if(img1 === img2){ //if two cards img match
-return console.log('Card Matched');
+    //if two cards are matched, then remove the click event listener from these cards so user cannot click these cards again
+    cardOne.removeEventListener("click", flipCard);
+    cardTwo.removeEventListener("click", flipCard);
+    cardOne = cardTwo = "";
   }
-  //if two cards do not match
+  //if two cards don't match 
   setTimeout(() => {
     //adds jiggle class to both unmatched cards after 400ms
     cardOne.classList.add("jiggle");
@@ -43,6 +46,8 @@ return console.log('Card Matched');
     //remove both jiggle and flip classes from both cards after 1.1 seconds
     cardOne.classList.remove("jiggle", "flip");
     cardTwo.classList.remove("jiggle", "flip");
+    //sets both card values to ""
+    cardOne = cardTwo = "";
   }, 1100);
 }
 
