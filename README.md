@@ -30,7 +30,7 @@ Hey squirrel-friend, 8 of the most popular Queens are in hiding and we need you 
 ---
 - [ ] Trivia pop-up window when cards match
 - [ ] Score board / flip count
-- [yas] Countdown timer
+- [x] Countdown timer
 - [ ] Sound when cards do not match
 - [ ] Voice clips for every matching pair
 - [ ] Screen responsive design
