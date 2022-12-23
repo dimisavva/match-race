@@ -1,4 +1,4 @@
-![intro photo](https://static.wikia.nocookie.net/logosrupaulsdragrace/images/a/a7/Original_Logo.png/revision/latest?cb=20210325220233)
+![Match Game screenshot](/images/MatchGame.png)
 
 
 # Welcome to **_RuPaul's Match Race_**
@@ -30,7 +30,7 @@ Hey squirrel-friend, 8 of the most popular Queens are in hiding and we need you 
 ---
 - [ ] Trivia pop-up window when cards match
 - [ ] Score board / flip count
-- [ ] Countdown timer
+- [yas] Countdown timer
 - [ ] Sound when cards do not match
 - [ ] Voice clips for every matching pair
 - [ ] Screen responsive design
