@@ -13,9 +13,9 @@ align-items: center;
 }
 
 .container{
-height: 800px;
+height: 650px;
 width: 800px;
-padding: 25px;
+padding: 50px 50px 100px 50px;
 display:flex;
 background:rgb(255, 255, 255);
 box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -47,13 +47,14 @@ border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .cards{
   height: 100%;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0;
+  padding: 0px;
   margin: 0;
 }
 .cards .card{ 
@@ -91,4 +92,89 @@ transform: rotateY(-180deg);
 }
 .card.flip .back-view{
   transform: rotateY(0);
+}
+
+
+.details{
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 20px;
+  border-radius: 7px;
+  background-color: rgb(236, 198, 198);
+  height: 50px;
+  justify-content: space-between;
+  display: flex;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+.details p{
+  font-size: 18px;
+  height: 17px;
+  padding-right: 18px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.details p span{
+  margin-left: 8px;
+}
+.details p b{
+  font-weight: 500;
+}
+.details button{
+  cursor: pointer;
+  font-size: 15px;
+  color: #6366ff;
+  border-radius: 4px;
+  padding: 4px 11px;
+  background: #fff;
+  border: 1px solid #6366ff;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+.details button:hover{
+  color: #fff;
+  background: #ff63ae;
+  border: 1px solid #ff63ae;
+}
+
+@media screen and (max-width: 700px) {
+  .cards{
+    height: 350px;
+    width: 350px;
+  }
+  .card .front-view img{
+    max-width: 16px;
+  }
+  .card .back-view img{
+    max-width: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .cards{
+    height: 300px;
+    width: 300px;
+  }
+  .card .back-view img{
+    max-width: 35px;
+  }
+  .details{
+    margin-top: 10px;
+    padding: 0 15px;
+    height: calc(100% / 4 - 20px);
+  }
+  .details p{
+    height: 15px;
+    font-size: 17px;
+    padding-right: 13px;
+  }
+  .details button{
+    font-size: 13px;
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    background: #6563ff;
+  }
 }

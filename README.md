@@ -26,9 +26,13 @@ Hey squirrel-friend, 8 of the most popular Queens are in hiding and we need you 
 ## Credits
 ---
 
-## Ice Box
+## Ice Box 
 ---
 - [ ] Trivia pop-up window when cards match
-- [ ] Score board
-- [ ] Original voice over 
+- [ ] Score board / flip count
+- [ ] Countdown timer
+- [ ] Sound when cards do not match
+- [ ] Voice clips for every matching pair
+- [ ] Screen responsive design
+- [ ] Light/Dark mode 
 

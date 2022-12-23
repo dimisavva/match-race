@@ -1,9 +1,11 @@
 
 const cards = document.querySelectorAll(".card");
+resetBtn = document.querySelector(".details button")
 
 let matchCard = 0;
 let cardOne, cardTwo;
 let disableDeck = false;
+
 
 function flipCard(evt) { 
   let clickedCard = evt.target; //collecting user's clicked card
@@ -65,13 +67,18 @@ function shuffleCard(){
   cards.forEach((card, index) => {
     card.classList.remove("flip");
     let imgTag = card.querySelector("img");
+    setTimeout(() =>{
     imgTag.src = `images/img-${arr[index]}.jpeg`;
+  }, 500);
     card.addEventListener("click", flipCard);
   });
 }
 
 shuffleCard();
 
+resetBtn.addEventListener("click", shuffleCard)
+
 cards.forEach(card => { //this adds click event to all card
   card.addEventListener("click", flipCard);
 });
+
