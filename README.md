@@ -16,6 +16,10 @@ Hey squirrel-friend, 8 of the most popular Queens are in hiding and we need you 
 
 # [**CLICK HERE** to start the game!](https://dimisavva-match-race.netlify.app "RuPaul's Match Race")
 
+## [**Planning Materials**](https://trello.com/b/IqFGT4nN/rupauls-snatch-the-match-game-unit-1-project "RuPaul's Match Race - Planning Materials")
+---
+---
+
 ## Technologies used: 
 ---
 - HTML
