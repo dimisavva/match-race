@@ -47,7 +47,7 @@ function initTimer() {
         messageEl.textContent = `You're a Winner, baby!`
         setTimeout(() => {
           return shuffleCard();
-        }, 900); //invoke shuffleCard function after 900ms
+        }, 1500); //invoke shuffleCard function after 1500ms
       }
       //if two cards are matched, then remove the click event listener from these cards so user cannot click these cards again
       cardOne.removeEventListener("click", flipCard);
