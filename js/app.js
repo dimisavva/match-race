@@ -1,7 +1,7 @@
-const cards = document.querySelectorAll(".card"),
-resetBtn = document.querySelector(".details button"),
+const cards = document.querySelectorAll(".card");
+resetBtn = document.querySelector(".details button");
 timeTag = document.querySelector(".time b");
-const messageEl = document.getElementById('message')
+const messageEl = document.getElementById('message');
 
 let maxTime = 40;
 let timeLeft = maxTime;
@@ -12,12 +12,13 @@ let cardOne, cardTwo, timer, winner;
 
 
 function initTimer() {
-  if(timeLeft <= 0) {
-      return clearInterval(timer);
+  if(timeLeft < 1) {
+      clearInterval(timer);
+      messageEl.textContent = "Sorry dear, Sashay Away"
     }
-    timeLeft--;
+    else {timeLeft--;
     timeTag.innerText = timeLeft;
-  }
+    }}
   
   function flipCard({target: clickedCard}) {
     if(!isPlaying) {
@@ -96,7 +97,13 @@ function shuffleCard(){
 
 shuffleCard();
 
-resetBtn.addEventListener("click", shuffleCard)
+function resetGame(){
+  resetBtn.addEventListener("click",()=>{
+    shuffleCard();
+    messageEl.textContent = "RuPaul's Match Race"
+  })
+}
+resetGame();
 
 cards.forEach(card => { //this adds click event to all card
   card.addEventListener("click", flipCard);
